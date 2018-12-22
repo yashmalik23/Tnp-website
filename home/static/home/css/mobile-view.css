@@ -1,0 +1,27 @@
+@media all and(max-width: 768px){
+	.nav-bar > div > ul{
+		display: none;
+	}
+	.trigger{
+		display: flex;
+	}
+	.sub-menu{
+		display: none;
+		background: #f1f1f1;
+		margin-top: 37%;
+	}
+	.sub-menu-list{
+		list-style-type: none;
+	}
+	.sub-menu-item{
+		padding: 2%;
+		font-size: 0.8em;
+	}
+	.sub-menu-item >a{
+		text-decoration: none;
+		color: #13307e;
+	}
+	.sub-menu-item >a:hover{
+		color: #4BCDA1;
+	}
+}

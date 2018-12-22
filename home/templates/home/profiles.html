@@ -1,0 +1,55 @@
+{% extends 'home/index.html' %}
+{% block title %}Profiles {% endblock %}
+{% block body %}
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'home/css/profiles.css' %}">
+<style type="text/css">
+	.elements >a.nav-6{
+		color: #4BCDA1;
+	}
+	.sub-menu-item >a.nav-7{
+		color: #4BCDA1;
+	}
+</style>
+	<div class="vertical-nav">
+		<div class="heading-1">BRANCHES</div>
+		<div class="elements-1"  style="color: #13307e;">CSE</div>
+		<div class="elements-1" >ME</div>
+		<div class="elements-1" >ECE</div>
+		<div class="elements-1" >EIE</div>
+		<div class="elements-1" >CE</div>
+		<div class="elements-1" >FT</div>
+	</div>
+	<!-- Vertical nav ends -->
+	<!-- Pie charts -->
+	<section class="charts">
+		<h4 class="heading-demo">Demographics of 2K19-Batch</h4>
+		<img src="{% static 'home/images/btech.png' %}" class="charts-1">
+		<img src="{% static 'home/images/mtech.png' %}" class="charts-1">
+	</section>
+	<!-- Pie charts ends -->
+	<section id="#cs">
+		<h4 class="heading-2">Computer Science</h4>
+		<h4 class="total">Total Students : 120</h4>	
+				{% for stu in profile %}
+				{% ifequal stu.branch "CSE" %}
+				<div class="profile-wrapper">	
+					<img src="{{stu.pic.url}}" class="imag">
+						<div class="wrapper">
+							<h4 class="heading-3">DETAILS :</h4>
+							<h4 class="elements-3">{{stu.name}}</h4><br>
+							<h4 class="elements-3">{{stu.regn_no}}</h4><br>
+							<h4 class="elements-3">CGPA : {{stu.CGPA}}</h4><br>
+							<h4 class="elements-x">{{stu.email}}</h4>
+						</div>
+						<div class="wrapper">
+							<h4 class="heading-3">SKILLS :</h4>
+							<h4 class="elements-4">1. {{stu.skill1}}</h4><br>
+							<h4 class="elements-4">2. {{stu.skill2}}</h4><br>
+							<h4 class="elements-4">3. {{stu.skill3}}</h4>
+						</div>	
+					</div>
+				{% endifequal %}
+				{% endfor %}
+	</section>
+{% endblock %}

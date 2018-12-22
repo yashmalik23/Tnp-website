@@ -1,0 +1,98 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #FDFFFC;
+}
+/*Navigation Bar*/
+.nav-bar{
+	background: #EAEFEB;
+}
+/*Content*/
+.heading-1{
+	margin-top: 13vh;
+	font-family: Calibri;
+	font-size: 5vmin;
+	color: #13307e;
+	font-weight: 100;
+	padding: 1%;
+	font-variant: small-caps;	
+}
+.appeal{
+	font-family: Calibri;
+	font-size: 2.5vmin;
+	width: 80vw;
+	margin-left: 10vw;
+	color: #000000;
+	padding: 3% 1%;
+	font-weight: 100;
+	text-align: justify;
+}
+.request{
+	font-family: Calibri;
+	font-size: 2.8vmin;
+	color: #000000;
+	font-weight: 100;
+	padding: 1%;
+	text-align: center;
+}
+.heading-2{
+	margin-top: 5vh;
+	font-family: Calibri;
+	font-size: 5vmin;
+	color: #13307e;
+	font-weight: 100;
+	width: 80vw;
+	padding: 1%;
+	font-variant: small-caps;
+	background: #FDFFFC;
+}
+.wrapper{
+	width: 24vw;
+	display: inline-block;
+	text-align: center;
+	color: #13307e;
+	font-family: Calibri;
+	padding-top: 4%;
+}
+.wrapper >img{
+	height: 200px;
+	width: 200px;
+	box-shadow: -8px -7px 15px -4px rgba(0,0,0,0.4);
+}
+.elements-1{
+	font-size: 2.5vmin;
+	font-weight: lighter;
+	padding-bottom: 1%;
+}
+.byte{
+	color: #000000;
+	font-size: 2vmin;
+	text-align: justify;
+	width: 70%;
+	margin-left: 15%;
+	padding-bottom: 15%;
+}
+/*Footer starts*/
+.footer{
+	margin-top: 4%;
+}
+@media screen and (max-width:968px){
+	.wrapper{
+		width: 32vw;
+	}
+	.wrapper >img{
+		width: 180px;
+		height: 180px;
+	}
+}
+@media screen and (max-width:700px){
+	.wrapper{
+		width: 49vw;
+	}
+	.wrapper >img{
+		height: 150px;
+		width: 150px;
+	}
+}

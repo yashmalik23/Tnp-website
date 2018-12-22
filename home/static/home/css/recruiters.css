@@ -1,0 +1,90 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	position: relative;
+	background: #ffffff;
+}
+/*Navigation Bar*/
+.nav-bar{
+	background: #EAEFEB;
+}
+/*Navigation bar ends*/
+/*?Contents*/
+.heading-1{
+	margin-top: 13vh;
+	font-family: Calibri;
+	font-size: 5vmin;
+	color: #13307E;
+	font-weight: 100;
+	padding: 1%;
+	font-variant: small-caps;	
+}
+.appeal{
+	font-family: Calibri;
+	font-size: 2.5vmin;
+	width: 80vw;
+	margin-left: 10vw;
+	color: #000000;
+	font-weight: 100;
+	padding: 1%;
+	text-align: justify;
+}
+.request{
+	font-family: Calibri;
+	font-size: 2.8vmin;
+	font-weight: 100;
+	padding: 1%;
+	text-align: center;
+	color: #4BCDA1;
+}
+.heading-2{
+	margin-top: 5vh;
+	font-family: Calibri;
+	font-size: 5vmin;
+	color: #13307E;
+	font-weight: 100;
+	padding: 1%;
+	font-variant: small-caps;
+	background: #ffffff;
+	width: 80vw;
+}
+.order{
+	font-family: Calibri;
+	font-size: 4vmin;
+	color: #000000;
+	font-weight: 100;
+	padding: 1%;
+	font-variant: small-caps;
+}
+.partner{
+	display: inline-block;
+	width: 23vw;
+}
+.partner >img{
+	max-width: 75%;
+	padding: 10%;
+}
+.name-wrapper{
+	display: inline-block;
+	width: 20vw;
+	padding-left: 12%;
+}
+.company-name{
+	font-family: Calibri;
+	font-size: 2.5vmin;
+	color: #13307E;
+	font-weight: 100;	
+	padding: 1%;
+	font-variant: small-caps;
+}
+/*Footer starts*/
+.footer{
+	margin-top:2%;
+}
+@media screen  and(max-width: 700px){
+	.logo{
+		width: 9%;
+	}
+}

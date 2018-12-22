@@ -1,0 +1,174 @@
+{% extends 'home/index.html' %}
+{% block title %}Home {% endblock %}
+{% block body %}
+{% load staticfiles %}
+<style type="text/css">
+	.elements >a.nav-1{
+		color: #4BCDA1;
+	}
+	.sub-menu-item >a.nav-1{
+		color: #4BCDA1;
+	}
+</style>
+<!-- Landing page -->
+	<div class="landing-page">
+	  <div class="landing-wrapper">
+	    <img src="{% static 'home/svg/sliet.svg' %}" class="logo-1">
+	    <h4 class="landing-heading">TRAINING AND PLACEMENT</h4>
+	    <h4 class="landing-heading-2">DEPARTMENT</h4>
+	    <a class="landing-nav"><i class="fa fa-angle-down fa-4x"></i></a>
+	  </div>
+	</div>
+	<!-- Landing page ends -->
+	<section class="greeting">
+		<img class="responsive" src="{% static 'home/images/sliet.png' %}">
+		<div class="wrapper-1">
+			<h3 class="heading-1">Greetings!</h3>
+			<p class="content-1">Sant Longowal Institute of Engineering and Technology (SLIET), Longowal, was established by Ministry of Human Resource and Development, Government of India in the year 1989. Since then, SLIET is marching ahead under the able guidance of Hon'ble Director SLIET, Prof. (Dr.) Shailendra Jain.</p>
+			<a class="button-1" href="{% url 'whyus' %}">Read More</a>
+		</div>
+	</section>
+	<div class="fix">
+		<div class="headtp">
+		<h3 class="heading-2">About SLIET</h3>
+		<img src="{% static 'home/images/front.jpg' %}" class="headpic">
+		<h4 class="head-name1">Prof. (Dr.) Ravi Kant Mishra</h4>
+		<h4 class="designation1">HOD (T&P)</h4>
+		</div>
+	<div class="abouthome">
+		<b>Welcome to SLIET!</b><br><br>
+		I heartly welcome all the viewers. Let me introduce my institute with your good self. The prestigious institute, SLIET is marching ahead under the able guidance of Hon'ble Director SLIET, Prof. (Dr.) Shailendra Jain.<br><br>
+		Sant Longowal Institute of Engineering and Technology (SLIET), Longowal, was established by Ministry of Human Resource and Development, Government of India in the year 1989. Since then marching ahead, recently SLIET, achieved 56th Rank in the year 2016 by NIRF-MHRD-GOI.The institute was established to give a humble tribute to the everlasting memory of the revered saint, Sant Harchand Singh Longowal by Ministry Of Human Resource and Development (MHRD), Govt. of India in the year 1989, and was formally inaugurated on 20th December 1991.<br><br>
+		Today the Institute enjoys its status at par with NITs, IIMs, Central Universities and other CFTIs. SLIET offers six Masters Program in Engineering courses, nine Bachelors Program in Engineering courses, ten Integrated Certificate-Diploma (ICD) courses in addition to Ph.D. courses in various disciplines. The institute is an autonomous body, fully funded by Govt. Of India and controlled by SLIET society, registered under Societies Registration Act, 1860 and was declared as a Deemed to be University vide Government of India, MHRD on 10th April, 2007. The institute awards its own Certificate, Diploma, Undergraduate and Postgraduate degrees approved and recognized by AICTE, New Delhi. Institute also awards Ph.D. degrees in all the Departments of Engineering, Science and Management.<br><br>
+	</div>
+	<div class="abouthome-2">
+		The Degree courses offered are in Computer Science and Engineering, Electronics & Communication Engineering, Instrumentation and Control Engineering, Chemical Engineering, Mechanical Engineering (Spl. in Manufacturing Engineering), Mechanical Engineering (Spl. in Welding Technology) and Food Engineering & Technology. Our Engineering graduates spend 3 years after diploma, 4 years after 10+2 and 6 years after matriculation in the institute to acquire technical knowledge which provides them with technical edge over others.
+		Our alumni have been performing quite well in companies such as Tata Projects Limited, TCS, ISGEC, HPE, GE INDIA , Afcons Infrastructure, Honda Cars India Limited, L & T, Hero Group, Trident Group, Godrej, Vardhman Industries, Mahindra & Mahindra , Microsoft, Reliance, Punj Lloyd, Infosys, Hexaware, Hewlett Packard, LG, Byju's Learning, Virtusa Polaris, Nestle India, Intersoft, Hindustan Unilever Limited, Samsung, EbizOn, Keyence, SIDEL India, Jindal Saw Ltd., Wipro, Honeywell, Accenture, International Tractors Limited, Maruti Suzuki, Coca-Cola, Tech Mahindra, shell to name a few (but not limited to).<br><br>
+		We at SLIET always strive to forge stronger relations with industries for the mutual benefit through exchange programs, expert lectures by industry professionals, sharing of R&D facilities, consultancy, student’s projects, industrial training etc. The institute has a sprawling area of 451 acres of land surrounded by lush green land, the campus of the institute extends a beautiful and well developed area with many topographically featured picturesque landscape, numerous buildings of various nature and stature and metal road network. The campus presents a spectacle of harmony and natural beauty. It is embedded with all the amenities required for a complete township.
+		Read more about SLIET @<a href="http://sliet.ac.in" style="text-decoration: none; color: #13307e;">http://sliet.ac.in</a><br><br>
+		For affiliation details, you may visit <a href="http://mhrd.gov.in/others" style="text-decoration: none; color: #13307e;">http://mhrd.gov.in/others</a><br><br>
+	</div>
+	<section class="whyus">
+		<h3 class="heading-2" style="width: 18vh; border-bottom: 1px solid #286DC0;">Why Sliet</h3>
+		<article class="article-1">
+				<h4 class="small-heading-1">By The Numbers</h4>
+				<h4 class="small-heading-2">Visitor's Speak</h4>
+				<div class="numbers-2">	
+					<div class="numbers">
+						<div class="line">20</div>0+ 
+						<h6 class="numbers-description">placed in 2018</h6>
+					</div>
+					<div class="numbers">
+						<div class="line">10</div>0+ 
+						<h6 class="numbers-description">Gate Qualified</h6>
+					</div>
+					<div class="numbers">
+						<div class="line">40</div>0 
+						<h6 class="numbers-description">B.E. Students</h6>
+					</div>
+					<div class="numbers">
+						<div class="line">10</div>0 
+						<h6 class="numbers-description">Ph.D. Students</h6>
+					</div>
+					<div class="numbers">
+						<div class="line">10</div>0 
+						<h6 class="numbers-description">M.Tech. students</h6>
+					</div>
+					<div class="numbers">
+						<div class="line">40</div>0 
+						<h6 class="numbers-description">Diploma students</h6>
+					</div>
+				</div>	
+				<div class="speak-wrapper">	
+					<p class="speak">Students have practical knowledge in the working field, they know basics & the company will teach them what professional working knowledge is required during training .<br>We have selected students from this college on the basis of analytical & communication skills to make them and other team members comfortable working with them. So English becomes the first criteria of evaluation and these students are really good at programming skills. Obviously industry needs more doer than speakers.</p>
+					<div class="name-of-recruiter">
+						<h4 class="name">- Recruiter</h4>
+						<h4 class="name">Anonymous</h4>
+					</div>
+				</div>
+				<div class="visitor">
+					<h4 class="visitor-heading">Visitor's speak</h4>
+					<p class="speak-visitor">Students have practical knowledge in the working field, they know basics & the company will teach them what professional working knowledge is required during training .<br>We have selected students from this college on the basis of analytical & communication skills to make them and other team members comfortable working with them. So English becomes the first criteria of evaluation and these students are really good at programming skills. Obviously industry needs more doer than speakers.</p>
+					<div class="name-of-visitor">
+						<h4 class="namex">- Recruiter</h4>
+						<h4 class="namex">Anonymous</h4>
+					</div>
+				</div>
+		</article>
+	</section>
+	<section class="gallery">
+		<div class="heading-xx">Training and Placement Gallery</div>
+		<div class="carousel-container">
+		  <div class="carousel my-carousel carousel--translate">
+		    <input class="carousel__activator" type="radio" name="carousel" id="F" checked="checked"/>
+		    <input class="carousel__activator" type="radio" name="carousel" id="G"/>
+		    <input class="carousel__activator" type="radio" name="carousel" id="H"/>
+		    <input class="carousel__activator" type="radio" name="carousel" id="I"/>
+		    <input class="carousel__activator" type="radio" name="carousel" id="J"/>
+		    <div class="carousel__controls">
+		      <label class="carousel__control carousel__control--backward" for="J"></label>
+		      <label class="carousel__control carousel__control--forward" for="G"></label>
+		    </div>
+		    <div class="carousel__controls">
+		      <label class="carousel__control carousel__control--backward" for="F"></label>
+		      <label class="carousel__control carousel__control--forward" for="H"></label>
+		    </div>
+		    <div class="carousel__controls">
+		      <label class="carousel__control carousel__control--backward" for="G"></label>
+		      <label class="carousel__control carousel__control--forward" for="I"></label>
+		    </div>
+		    <div class="carousel__controls">
+		      <label class="carousel__control carousel__control--backward" for="H"></label>
+		      <label class="carousel__control carousel__control--forward" for="J"></label>
+		    </div>
+		    <div class="carousel__controls">
+		      <label class="carousel__control carousel__control--backward" for="I"></label>
+		      <label class="carousel__control carousel__control--forward" for="F"></label>
+		    </div>
+		    <div class="carousel__track">
+		      <li class="carousel__slide">
+		        <h1>Dr. M.P. Poonia, Vice Chairman, AICTE, India in SLIET campus.</h1>
+		      </li>
+		      <li class="carousel__slide">
+		        <h1>Head T&P interacting with IAF officers</h1>
+		      </li>
+		      <li class="carousel__slide">
+		        <h1>Ms. Garima Babbar (Head Strategic Alliance, Adobe) during III 2016-17</h1>
+		      </li>
+		      <li class="carousel__slide">
+		        <h1>Offer letter distribution ceremony "UDAAN-2018"</h1>
+		      </li>
+		      <li class="carousel__slide">
+		        <h1>Head T&P and TPO with our Alumni</h1>
+		      </li>
+		    </div>
+		    <div class="carousel__indicators">
+		      <label class="carousel__indicator" for="F"></label>
+		      <label class="carousel__indicator" for="G"></label>
+		      <label class="carousel__indicator" for="H"></label>
+		      <label class="carousel__indicator" for="I"></label>
+		      <label class="carousel__indicator" for="J"></label>
+		    </div>
+		  </div>
+		</div>
+	</section>
+</div>
+	<script src="{% static 'home/js/scripts.js' %}"></script>
+	<script type="text/javascript">
+		document.addEventListener('scroll',function(){
+			$("nav").css("background-color", "#EAEFEB");
+			$(".landing-wrapper").css("height","0vh");
+			});
+		$(document).ready(function(){
+			$(".landing-nav").click(function(){
+				$("nav").css("background-color", "#EAEFEB");
+				$(".landing-wrapper").css("height","0vh");
+			});
+		});
+		$(document).ready(function(){
+			$(".landing-nav").click(function(){
+				$(".elements").css("display","block")
+			});
+		});
+	</script>
+{% endblock %}

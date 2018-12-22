@@ -1,0 +1,152 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	position: relative;
+	background: #ffffff;
+}
+/*Navigation Bar*/
+.nav-bar{
+	background: #EAEFEB;
+}
+/*Navigation bar ends*/
+/*Notice*/
+.heading-1{
+	margin-top: 13vh;
+	font-family: Calibri;
+	font-size: 5vmin;
+	color: #707070;
+	font-weight: 100;
+	padding: 1%;
+}
+.date{
+	font-family: Calibri;
+	font-variant: small-caps;
+	font-size: 3vmin;
+	font-weight: 100;
+	padding: 1%;
+	padding-top: 2%;
+	color: #13307e;
+}
+.not{
+	display: inline-block;
+	margin-left: 2%;
+    padding-bottom: 4%;
+    width: 30vw;
+    height: 40vh;
+}
+.notice-heading{
+	font-family: Calibri;
+	font-variant: small-caps;
+	font-size: 2.5vmin;
+	font-weight: 100;
+	padding: 1%;
+}
+.notice{
+	font-family: Calibri;
+	font-weight: 100;
+	font-size: 2vmin;
+	padding: 3%;
+    width: 90%;
+	text-align: justify;
+}
+/*Notice ends*/
+/*Modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    overflow: scroll;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 2%;
+    border: 1px solid #888;
+    width: 80%;
+    height: 60%;
+    font-family: Calibri;
+    overflow: scroll;
+}
+.modal-content >p{
+	padding: 1%;
+	text-align: justify;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.myBtn{
+    margin-top: 3%;
+    display: inline-block;
+    font-size: 2vmin;
+    background-color: #4BCDA1;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 1px;
+    width: 7.5vw;
+    height: 6vh;
+    color: #fff;
+    line-height: 6vh;
+    font-variant: small-caps;
+    font-weight: 100;
+    box-shadow: 1px 5px 5px -1px rgba(0,0,0,0.3);
+    letter-spacing: 0.05em;
+    text-align: center;
+    font-family: Calibri;
+    margin-left: 37%;
+    margin-bottom: 2%;
+}
+/*Modal ends*/
+/*Footer starts*/
+.footer{
+	margin-top: 4%;
+}
+@media screen and (max-width: 1100px){
+    .myBtn{
+        width: 10vw;
+    }
+}
+@media screen and (max-width: 968px){
+    .not{
+        width: 47vw;
+    }
+}
+@media screen and (max-width: 600px){
+    .not{
+        width: 98vw;
+        padding-bottom: 0%;
+        height: 33vh;
+    }
+    .myBtn{
+        width: 18vw;
+        font-size: 2.5vmin;
+    }
+    .notice-heading{
+        font-size: 3vmin;
+    }
+    .notice{
+        font-size: 2.5vmin;
+    }
+}

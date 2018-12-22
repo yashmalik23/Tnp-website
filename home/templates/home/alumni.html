@@ -1,0 +1,30 @@
+{% extends 'home/index.html' %}
+{% block title %}Alumni {% endblock %}
+{% block body %}
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'home/css/alumni.css' %}">
+<style type="text/css">
+	.elements >a.nav-4{
+		color: #4BCDA1;
+	}
+	.sub-menu-item >a.nav-4{
+		color: #4BCDA1;
+	}
+</style>
+	<h4 class="heading-1">Appeal to Our Alumni</h4>
+	<p class="appeal">Dear Alumni,<br><br>
+	"Once a SLIETian, always a SLIETian."<br><br>
+	We, SLIETians wish that you are well with your family.We always feel proud to our alumni like you. We also believe that you are making yourself and your family name shining like a star.<br><br>
+	As you know SLIET is marching ahead under the able guidance of Honble. Director SLIET, Prof. (Dr.) S.K. Jain and you will be happy to know that various technical milestones have been achieved by coming batches and are inspired to achieve more. Several technical events and functions in our campus could only be possible with complete involvement of B.E final year students.<br><br>
+	You will be happy to know that the placement of the students are going well but since we have you, we believe to share the responsibility of placement with SLIETians like you. It is our request to communicate your campus visit program and be instrumental to organise the on campus placement drive at SLIET Longowal.<br>
+	<div class="request">"We wish you a healthy and happy life ahead."</div></p>
+	<h4 class="heading-2">Our Pride</h4>
+	{% for alum in alum%}
+	<div class="wrapper">
+		<img src="{{ alum.pic.url }}">
+		<h4 class="elements-1">{{alum.name}}</h4>
+		<h4 class="elements-1">{{alum.rank}}</h4>
+		<h4 class="elements-1">{{alum.company}}</h4>
+	</div>
+	{% endfor %}
+{% endblock %}

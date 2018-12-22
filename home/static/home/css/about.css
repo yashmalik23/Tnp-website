@@ -1,0 +1,283 @@
+/*Content*/
+body{
+	background: #ffffff;
+}
+.nav-bar{
+	background: #EAEFEB;
+}
+.heading-1{
+	margin-top: 5vh;
+	font-family: Calibri;
+	font-size: 4vmin;
+	color: #707070;
+	font-weight: 100;
+	padding: 1%;
+	font-variant: small-caps;
+	margin-left: 2%;
+}
+.heading-2{
+	margin-left: 2%;
+	margin-top: 13vh;
+	font-family: Calibri;
+	font-size: 4vmin;
+	color: #707070;
+	font-weight: 100;
+	padding: 1%;
+	font-variant: small-caps;
+	background: #ffffff;
+	width: 80%;	
+}
+.tp-image{
+	margin-left: 5%;
+	margin-top: 2%;
+	max-width: 18%;
+}
+.head-name{
+	margin-top: 2vh;
+	font-family: Calibri;
+	width: 18vw;
+	font-size: 2.8vmin;
+	margin-left: 5%;
+	color: #707070;
+	font-weight: 100;
+	padding-bottom: 1%;
+	font-variant: small-caps;
+}
+.designation{
+	font-family: Calibri;
+	font-size: 2.5vmin;
+	text-align: center;
+	margin-left: 5%;
+	color: #707070;
+	width: 18vw;
+	font-weight: 100;
+	padding-bottom: 0.5%;
+	font-variant: small-caps;
+}
+.email{
+	font-family: Calibri;
+	font-size: 2.3vmin;
+	text-align: center;
+	margin-left: 5%;
+	color: #13307E;
+	width: 18vw;
+	font-weight: 100;
+	padding-bottom: 1%;
+}
+.highlight{
+	text-align: center;
+	width: 65vw;
+	margin-left: 30%;
+	margin-top: -33%;
+	padding-bottom: 10%;
+	font-family: Calibri;
+	color: red;
+	font-size: 2.5vmin;
+}
+.saying{
+	text-align: justify;
+	width: 65vw;
+	margin-left: 30%;
+	margin-top: -35%;
+	padding-bottom: 3	%;
+	font-family: Calibri;
+	font-size: 2.3vmin;
+}
+.saying-1{
+	text-align: justify;
+	width: 65vw;
+	margin-left: 30%;
+	margin-top: -24%;
+	padding-bottom: 8%;
+	font-family: Calibri;
+	font-size: 2.3vmin;
+}
+.atpo{
+	display: inline-block;
+	width: 10vw;
+	text-align: center;
+	padding-left: 5%;
+	font-family: Calibri;
+	font-size: 2vmin;
+	padding-top: 1%;
+}
+.atpo >h4{
+	font-weight: 100;
+}
+.tpo{
+	display: inline-block;
+	width: 12.5vw;
+	text-align: center;
+	padding-left: 5%;
+	font-family: Calibri;
+	font-size: 2vmin;
+	padding: 0% 1% 1% 5%;
+}
+.tpo >h4{
+	font-weight: 100;
+}
+.fpo{
+	display: inline-block;
+	width: 12.5vw;
+	text-align: center;
+	padding-left: 5%;
+	font-family: Calibri;
+	font-size: 2vmin;
+	padding: 0% 1% 1% 5%;
+}
+.fpo >h4{
+	font-weight: 100;
+}
+.staff{
+	display: inline-block;
+	width: 20%;
+}
+.staff >img{
+	max-width: 25%;
+	margin-left: 7%;
+}
+.staff-name{
+	font-family: Calibri;
+	font-size: 2vmin;
+	text-align: center;
+	margin-left: 35%;
+	width: 18vw;
+	font-weight: 100;
+	padding-bottom: 0.5%;
+	font-variant: small-caps;
+}
+.staff-email{
+	font-family: Calibri;
+	font-size: 2vmin;
+	text-align: center;
+	margin-left: 35%;
+	width: 18vw;
+	font-weight: 100;
+	padding-bottom: 0.5%;
+}
+.phone{
+	font-family: Calibri;
+	font-size: 2vmin;
+	text-align: center;
+	margin-left: 35%;
+	width: 18vw;
+	font-weight: 100;
+	padding-bottom: 0.5%;
+	font-variant: small-caps;
+}
+.branch{
+	font-family: Calibri;
+	font-size: 2vmin;
+	color: #000000;
+	font-weight: 100;
+	margin-left: 2%;
+	padding: 1%;
+	font-variant: small-caps;
+}
+.pr-wrapper{
+	display: inline-block;
+	width: 13vw;
+	text-align: center;
+	padding-left: 5%;
+	font-family: Calibri;
+	font-size: 2vmin;
+	padding: 0% 1% 1% 5%;
+}
+.pr-wrapper >h4{
+	font-weight: 100;
+}
+/*Footer starts*/
+.footer{
+	margin-top: 3%;
+}
+@media screen and (max-width: 1200px){
+	.saying{
+		margin-top: -42%;
+	}
+	.saying-1{
+		margin-top: -32%;
+	}
+	.atpo{
+		width: 14vw;
+	}
+	.tpo{
+		width: 17.5vw;
+	}
+	.fpo{
+		width: 17.5vw;
+	}
+	.pr-wrapper{
+		width: 17vw;
+	}
+}
+@media screen and (max-width: 968px){
+	.saying{
+		margin-top: 0;
+		margin-left: 0;
+		width: 90vw;
+		padding: 0% 4%;	
+	}
+	.tp-image{
+		margin-left: 39%;
+		max-width: 20%;
+	}
+	.head-name{
+		margin-left: 36%;
+		width: 40vw;
+	}
+	.designation{
+		margin-left: 40%;
+	}
+	.email{
+		margin-left: 30%;
+		width: 40vw;
+	}
+	.saying-1{
+		margin-top: 0;
+		margin-left: 0;
+		width: 90vw;
+		padding: 0% 4%;
+	}
+	.atpo{
+		width: 19vw;
+		font-size: 2.2vmin;
+	}
+	.tpo{
+		width: 25.5vw;
+		font-size: 2.2vmin;
+	}
+	.fpo{
+		width: 25.5vw;
+		font-size: 2.2vmin;
+	}
+	.pr-wrapper{
+		width: 25vw;
+		font-size: 2.2vmin;
+	}
+	.staff{
+		width: 27%;
+		font-size: 2.6vmin;
+	}
+}
+@media screen and (max-width: 968px){
+	.head-name{
+		margin-left: 33%;
+	}
+}
+@media screen and (max-width: 500px){
+	.atpo{
+		width: 26vw;	
+	}
+	.staff-name{
+		font-size: 2.6vmin;
+	}
+	.staff-email{
+		font-size: 2.6vmin;
+	}
+	.phone{
+		font-size: 2.6vmin;
+	}
+	.staff{
+		width: 30%;
+	}
+}

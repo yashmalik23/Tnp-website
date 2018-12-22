@@ -1,0 +1,102 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title %}Home{% endblock %}</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="{% static 'home/home.css' %}">
+</head>
+<body>
+	<!-- Navigation-bar -->
+	<nav class="nav-bar">
+	  	<div class="desktop-view">
+	    	<a class="logo" href="{% url 'index' %}"><img src="{% static 'home/svg/tplogo.svg' %}" class="logo-svg"></a>
+	    	<a class="trigger">Browse</a>
+	    	<div class="sub-menu" >
+	    		<ul class="sub-menu-list">
+	    			<div class="call-out-arrow"></div>
+	    			<li class="sub-menu-item"><a href="{% url 'index' %}" class="nav-1">Home</a></li>
+		      		<li class="sub-menu-item"><a href="{% url 'whyus' %}" class="nav-2">Why Sliet</a></li>
+		      		<li class="sub-menu-item"><a href="{% url 'recruiters' %}" class="nav-3" >Recruiting Partners</a></li>
+		      		<li class="sub-menu-item"><a href="{% url 'alumni' %}"  class="nav-4">Alumni</a></li>
+		      		<li class="sub-menu-item"><a href="{% url 'notice' %}" class="nav-5">Notices</a></li>
+		      		<li class="sub-menu-item"><a href="{% url 'download' %}" class="nav-6">Downloads</a></li>
+		      		<li class="sub-menu-item"><a href="{% url 'gallery' %}" class="nav-add">Gallery</a></li>
+		      		<li class="sub-menu-item"><a href="{% url 'profiles' %}" class="nav-7">Student Profiles</a></li>
+		      		<li class="sub-menu-item"><a href="{% url 'about' %}" class="nav-8">Contact Us</a></li>
+		      		<li class="sub-menu-item"><a href="{% url 'tnp_team' %}" class="nav-9">T&P Team</a></li>
+	    		</ul>
+	    	</div>
+	    	<ul> 
+	      		<li class="elements"><a href="{% url 'index' %}" class="nav-1">Home</a></li>
+	      		<li class="elements"><a href="{% url 'whyus' %}" class="nav-2">Why Sliet</a></li>
+	      		<li class="elements"><a href="{% url 'recruiters' %}" class="nav-3">Recruiting Partners</a></li>
+	      		<li class="elements"><a href="{% url 'alumni' %}" class="nav-4">Alumni</a></li>
+	      		<li class="elements" id="dropdown">
+	      			<button class="dropbtn">T&P Corner</button>
+	      			<div class="dropdown-content">
+					    <a href="{% url 'notice' %}">Notices</a>
+					    <a href="{% url 'download' %}">Downloads</a>
+					  </div>
+				</li>
+				<li class="elements"><a href="{% url 'gallery' %}" class="nav-add">Gallery</a></li>
+	      		<li class="elements"><a href="{% url 'profiles' %}" class="nav-6">Student Profiles</a></li>
+	      		<li class="elements" id="dropdown-1">
+	      			<button class="dropbtn">Contact Us</button>
+	      			<div class="dropdown-content">
+					    <a href="{% url 'about' %}">For Recruitment</a>
+					    <a href="{% url 'tnp_team' %}">T&P team</a>
+					  </div>
+				</li>
+	    	</ul>
+	    	<div class="search">
+	      		<a class="search-logo"><img src="{% static 'home/svg/search.svg' %}" class="log-svg"></a>
+	    	</div>
+	  	</div>
+	</nav>
+	<!-- Navigation bar ends -->
+	{% block body %}
+	{% endblock %}
+	<section class="footer"><!-- Footer -->
+		<article>
+			<div class="footer-heading">
+				<div style="border-bottom: 1px solid #fff; display: inline;">Help</div>ful Links
+			</div>
+			<div class="wrapper-3">
+				<h4 class="links"><a href="{% url 'about' %}" >Contact Us</a></h4>
+				<h4 class="links"><a href="http://sliet.ac.in"> SLIET Longowal</a></h4>
+				<h4 class="links"><a href="{% url 'profiles' %}" >Students Profiles</a></h4>
+				<h4 class="links"><a href="{% url 'notice' %}" >Student's Corner</a></h4>
+				<h4 class="links"><a href="{% url 'download' %}" >Downloads</a></h4>
+				<h4 class="links"><a href="{% url 'alumni' %}" >Our Pride</a></h4>
+			</div>
+			<div class="copyright"> Copyright ©️ SLIET(Deemed to be University) . All rights Reserved 2018</div>
+		</article>
+	</section>
+</body>
+</html>
+<script type="text/javascript">
+$(document).ready(function(){
+	var i=1;
+$(".trigger").click(function(){
+	if (i%2==1) {
+		$(".sub-menu").css("display", "block");
+		$(".call-out-arrow").css("display", "block");
+		$(".trigger").html("Close");
+		$(".trigger").css("margin-left", "15px");
+		i+=1;
+	}
+	else {
+	$(".sub-menu").css("display", "none");
+	$(".call-out-arrow").css("display", "none");
+	$(".trigger").html("Browse");
+	$(".trigger").css("margin-left", "0px");
+	i+=1;
+}
+});
+});
+</script>

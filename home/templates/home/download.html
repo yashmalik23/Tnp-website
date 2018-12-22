@@ -1,0 +1,21 @@
+{% extends 'home/index.html' %}
+{% block title %}Downloads{% endblock %}
+{% block body %}
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'home/css/download.css' %}">
+<meta charset="utf-8" http-equiv="content-type" content="text/html">
+<style type="text/css">
+	.dropbtn{
+		color: #4BCDA1;
+	}
+	.sub-menu-item >a.nav-6{
+		color: #4BCDA1;
+	}
+</style>
+	<h4 class="heading-1">DOWNLOADS</h4>
+	<ul class="download">
+		{% for down in down %}
+		<li><a href="{{down.file.url}}">{{down.name}}</a></li>
+		{% endfor %}
+	</ul>
+{% endblock %}

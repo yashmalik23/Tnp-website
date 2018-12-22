@@ -1,0 +1,79 @@
+{% extends 'home/index.html' %}
+{% block title %}Tnp Team{% endblock %}
+{% block body %}
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'home/css/about.css' %}">
+<style type="text/css">
+	.dropbtn-1{
+		color: #4BCDA1;
+	}
+	.sub-menu-item >a.nav-9{
+		color: #4BCDA1;
+	}
+</style>
+<!-- ATPO -->
+	<h4 class="heading-2" style="width: 96%;">Assistant Training and Placement officers</h4>
+	{% for i in tea %}
+	{% if "atpo" in i.rank %}
+	<div class="atpo">	
+		<h4 class="small-name">{{i.name}}</h4>
+		<h4 class="small-designation">{{i.designation}}</h4>
+		<h4 class="small-email">{{i.email}}</h4>
+		<h4 class="small-email">{{i.phone}}</h4>
+	</div><!--
+	-->
+	{% endif %}
+	{% endfor %}
+	<!-- Placement co-ordinators -->
+	<h4 class="heading-1">Faculty Placement Co-ordinators</h4>
+	{% for i in tea %}
+	{% if "fpc" in i.rank %}
+	<div class="tpo">	
+		<h4 class="small-name">{{i.name}}</h4>
+		<h4 class="small-designation">{{i.designation}}</h4>
+		<h4 class="small-email">{{i.email}}</h4>
+		<h4 class="small-email">{{i.phone}}</h4>
+	</div><!--
+	-->
+	{% endif %}
+	{% endfor %}
+	<!-- Faculty training co-ordinators -->
+	<h4 class="heading-1">Faculty Training Co-ordinators</h4>
+	{% for i in tea %}
+	{% if "ftc" in i.rank %}
+	<div class="fpo">	
+		<h4 class="small-name">{{i.name}}</h4>
+		<h4 class="small-designation">{{i.designation}}</h4>
+		<h4 class="small-email">{{i.email}}</h4>
+		<h4 class="small-email">{{i.phone}}</h4>
+	</div><!--
+	-->
+	{% endif %}
+	{% endfor %}
+	<!-- STaff -->
+	<h4 class="heading-1">Office Staff</h4>
+	<div class="staff">
+		<h4 class="staff-name">Saleem Khan</h4>
+		<h4 class="staff-email">tnpoffice16@gmail.com</h4>
+		<h4 class="phone"> 01672-253133–134 & 01672-280021</h4>
+	</div>
+	<div class="staff">
+		<h4 class="staff-name">Gurjant Singh</h4>
+		<h4 class="staff-email">tnpoffice16@gmail.com</h4>
+		<h4 class="phone">01672-253134,94655-24513</h4>
+	</div>
+	<!-- PRs -->
+	<h4 class="heading-1"> Student Placement Representatives</h4>
+	<div class="prs">
+		{% for i in tea %}
+		{% if "PR" in i.rank %}
+		<div class="pr-wrapper">
+			<h4 class="pr-name">{{i.name}}</h4>
+			<h4 class="pr-name">{{i.designation}}</h4>
+			<h4 class="pr-mail">{{i.email}}</h4>
+		</div><!--
+	-->
+		{% endif %}
+		{% endfor %}
+	</div>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'home/index.html' %}
+{% block title %}Gallery{% endblock %}
+{% block body %}
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'home/css/gallery.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'home/css/whyus.css' %}">
+<style type="text/css">
+	.nav-add{
+		color: #4BCDA1;
+	}
+	.sub-menu-item >a.nav-add{
+		color: #4BCDA1;
+	}
+</style>
+	<div class="heading-3-why" style="margin-top: 70px;">T&P Gallery</div>
+		{% for g in gal%}
+		<div class="wrapper-images">
+			<img src="{{g.pic.url}}" class="imgs">
+			<h4 class="heading-x">{{g.name}}</h4>
+		</div><!--
+		-->
+		{% endfor %}
+{% endblock %}

@@ -1,0 +1,45 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #ffffff;
+}
+/*Navigation Bar*/
+.nav-bar{
+	background: #EAEFEB;
+}
+/*dOWNLOADS*/
+.heading-1{
+	margin-top: 13vh;
+	font-family: Calibri;
+	font-size: 4vmin;
+	color: #707070;
+	font-weight: 100;
+	padding: 1%;
+}
+.download{
+	list-style-type: disc;
+	font-family: Calibri;
+	font-size: 3vmin;
+	font-weight: 100;
+	padding: 2%;
+	margin-left: 5%;
+}
+.download >li{
+	padding: 0.8%;
+}
+
+/*.download > li:before{
+	content: "\\25BA \\0020";
+}*/
+.download >li >a{
+	text-decoration: none;
+	font-variant: small-caps;
+	font-family: Calibri;
+	color: #13307e;
+}
+/*Footer starts*/
+.footer{
+	margin-top: 28%;
+}
